@@ -1,0 +1,33 @@
+#  CS 1XA3 Project01 - <singj47>
+## Usage
+   Execute this script from project root with:
+        chmod +x CS1XA3/Project01/project_analyze.sh
+        ./CS1XA3/Project01/project_analyze arg1 arg2 ...
+   With possible arguments
+arg1: execute the commands that are being passed
+## Feature 01 - Script Input
+Description : It takes the following arguments and runs the mentioned feature:
+	1.fixmelog
+	2.filetypecount
+	3.filesizelist 
+Execution : Type the feature you want to execute.
+Reference : some code was take from [https://mac1xa3.ca/Slides/Week04/1XA3_Lab_Week04.html]
+## Feature 02- fixmelog
+Description : this feature Finds every file in my repo that has the word FIXME in the last line and put the list of these file names in CS1XA3/Project01/fixme.log with each file separated by a
+newline then creates the file CS1XA3/Project01/fixme.log if it doesn’t exist,and  overwrite it if it does
+Execution : execute this feature by typing fixmelog after it tells you to put in the feature you need to execute.
+Reference : some code was taken from [https://stackoverflow.com/questions/39615142/bash-get-last-line-from-a-variable]
+## Feature 03 - file type count
+Description : Uses the read command (with a prompt) after plugging in the extension(.txt,.pdf,.sh,.py, etc) you want, it to calculate it outputs the number of files in the repo.
+Execution : type in the extension you want it to calculate the files for
+Reference : some code was taken from [ https://askubuntu.com/questions/454564/count-total-number-of-files-in-particular-directory-with-specific-extension]
+## Feature 04 - file size list
+Description : It lists all files in the repo  and their sizes in a human readable format (i.e KB, MB, GB, etc) ans list the files sorted from largest to smallest.
+Execution : pass the argument filesizelist and it will display the size and name of the file from largest to smallest.
+Reference :some code was taken from [ https://superuser.com/questions/368784/how-can-i-sort-all-files-by-size-in-a-directory]
+## Custom Feature SomeFeature
+## Custom Feature 01 -stuffcount
+Description : This feature prompts the user to input a file name . If the file doesnt exist it gives an error message , if it does then the feature count number of words,
+characters, white spaces and special symbols in a given file .
+## Custom Feature 02 -changelinespace 
+Description : This feature prompts the user to input a file name . If the file doesnt exist it gives an error message , if it does then the feature reads the file and add extra an spacing to it. 
