@@ -1,22 +1,31 @@
 #  CS 1XA3 Project03 - singj47
 ## Usage
-   Install conda enivornment with 
+   Install conda enivornment with
+ 
    ```pip install django```
+
    ...
    Run locally with
+
       ```python manage.py runserver localhost:8000```
+
    Run on mac1xa3.ca with
+
       ```python manage.py runserver localhost:10095```
+  ...
+
+   Usernames | Passwords
+   --------- | ----------
+   TestUser  | 1234
+   Friend1     | Password@1
+   Friend2     | Password@2
+   Friend3     | Password@3
+   Friend4     | Password@4
+   Friend5     | Password@5
+   Friend6     | Password@6
+   Friend7     | Password@7
    ...
-   Log in with TestUser, password 1234
-   Log in with Friend1, password Password@1
-   Log in with Friend2, password Password@2
-   Log in with Friend3, password Password@3
-   Log in with Friend4, password Password@4
-   Log in with Friend5, password Password@5
-   Log in with Friend6, password Password@6
-   Log in with Friend7, password Password@7
-   ...
+
 ## Objective 01
 
  Description:
