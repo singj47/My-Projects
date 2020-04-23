@@ -124,3 +124,4 @@ STATIC_ROOT = '/home/singj47/public_html/static/'
 STATICFILES_DIRS = [
                  os.path.join(BASE_DIR, "static"),
                  ]
+

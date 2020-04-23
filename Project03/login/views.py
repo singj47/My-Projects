@@ -60,10 +60,23 @@ def signup_view(request):
     -------
       out : (HttpRepsonse) - renders signup.djhtml
     """
-    form = None
+    
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            models.UserInfo.objects.create_user_info(username=username,password=raw_password)
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('social:messages_view')
 
-    # TODO Objective 1: implement signup view
-
-    context = { 'signup_form' : form }
-
+       # TODO Objective 1: implement signup view
+        else: 
+            failed=True
+    else:
+        form = UserCreationForm()
+        failed = request.session.get('create_failed',False)
+    context = { 'signup_form' : form
+                ,'create_failed' : failed }
     return render(request,'signup.djhtml',context)

@@ -5,6 +5,7 @@
 function frResponse(data,status) {
     if (status == 'success') {
         // reload page to update like count
+        
         location.reload();
     }
     else {
@@ -59,7 +60,13 @@ function submitMorePpl(event) {
 
 function acceptDeclineRequest(event) {
     // TODO Objective 6: perform AJAX POST to accept or decline Friend Request
-    alert('Accept/Decline Button Pressed');
+    let frID=event.target.id;
+    let choice=event.target.name;
+    let json_data={ 'sent_from' : frID, 'decision' : choice };
+    let url_path=accept_decline_url;
+    $.post(url_path,
+           json_data,
+           frResponse);
 }
 
 /* ********************************************************************************************
@@ -74,3 +81,4 @@ $(document).ready(function() {
     // handle for accepting/declining a friend request
     $('.acceptdecline-button').click(acceptDeclineRequest);
 });
+
