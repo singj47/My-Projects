@@ -12,19 +12,8 @@
    Run on mac1xa3.ca with
 
       ```python manage.py runserver localhost:10095```
-  ...
 
-   Usernames | Passwords
-   --------- | ----------
-   TestUser  | 1234
-   Friend1     | Password@1
-   Friend2     | Password@2
-   Friend3     | Password@3
-   Friend4     | Password@4
-   Friend5     | Password@5
-   Friend6     | Password@6
-   Friend7     | Password@7
-   ...
+Log in with TestUser, password 1234
 
 ## Objective 01
 
@@ -174,5 +163,20 @@ Description:
          - this objective shows a variety of test users, shows many posts and likes and 
          different friend requests to showcase all the functionality user has implemented.
 
+	 - Following are the various users and their passwords used to populate the database:
+	
+- ...
 
+   Usernames | Passwords
+   --------- | ----------
+   TestUser  | 1234
+   Friend1     | Password@1
+   Friend2     | Password@2
+   Friend3     | Password@3
+   Friend4     | Password@4
+   Friend5     | Password@5
+   Friend6     | Password@6
+   Friend7     | Password@7
+   ...
+	- a new user can also be created easily by following objective 1.
 
