@@ -141,7 +141,7 @@ wants status can be added to the post.
 
 ### Exception:
 
--if there is no post posted by any user more button will just reload the current
+- if there is no post posted by any user more button will just reload the current
 page when clicked .
 
 ## Objective 10
