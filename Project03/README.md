@@ -17,13 +17,13 @@ Log in with TestUser, password 1234
 
 ## Objective 01
 
- Description:
+ ### Description:
 
 - this feature is displayed in signup.djhtml which is rendered by
 signup_view
 - it allows the user to create a new account once directed to the signup page.
 
- Exceptions:
+ ### Exception:
 
 - If the passwords don't match it throws an error .
 - Even if one of the conditions turn out to be False while creating
@@ -33,7 +33,7 @@ will keep on reloading the page .
 
 ## Objective 02
 
- Description:
+ ### Description:
 
 - this feature is displayed in social_base.djhtml
 - it displays the currently logged in user and the user info which includes
@@ -41,7 +41,7 @@ employment, location , birthday and user interests.
 
 ## Objective 03
 
- Description:
+ ### Description:
 
 - this feature is displayed in account.djhtml which is rendered by
 account_view
@@ -50,7 +50,7 @@ by clicking the top right icon on the Navbar .
 - Template account.djhtml has been edited to Handle POST requests sent by
 the form’s to update the UserInfo object accordingly.
 
- Exceptions:
+ ### Exception:
 
 - while updating interests a user cannot add the same interest as any other user
 if the user feels like adding the same interest as any other user he may add
@@ -63,7 +63,7 @@ it via the list of interest given .
 
 ## Objective 04
 
- Description:
+ ### Description:
 
 - this feature is displayed in people.djhtml which is rendered by
 people_view
@@ -72,7 +72,7 @@ which is handled by more_ppl_view
 - it shows the user the number of people who are not friends of the user
 and by clicking on the more button the user could see more people .
 
- Exceptions:
+ ### Exception:
 
 - if there is only one user using the system or every other user
 is a friend of that one user more button will just reload the
@@ -80,7 +80,7 @@ page without showing anything else.
 
 ## Objective 05
 
- Description:
+ ### Description:
 
 - this feature is displayed in people.djhtml which is rendered by
 people_view
@@ -90,14 +90,14 @@ uses its id to send a POST request to the function  friend_request_view
 clicking on the ' Friend Request' button , once request has been sent the button disables
 automatically.
 
-Exceptions:
+### Exception:
 
 - once friend request is sent by clicking on the friend request button
 there isn't a way to cancel that friend request unless the user declines the request.
 
 ## Objective 06
 
- Description:
+ ### Description:
 
 - this feature is displayed in people.djhtml which is rendered by
  accept_decline_view
@@ -107,7 +107,7 @@ the username of the user who sent the request and accept or decline accordingly.
 
 ## Objective 07
 
- Description:
+ ### Description:
 
 - this feature is displayed in messages.djhtml which is rendered by
 messages_view
@@ -115,7 +115,7 @@ messages_view
 
 ## Objective 08
 
- Description:
+ ### Description:
 
 - respective editing has been done in Project03/social/static/messages.js
 to enable this feature.
@@ -124,13 +124,13 @@ wants status can be added to the post.
 - once post is successfully posted the page is reloaded.
 - form would not accept a value more than 280 characters in the status column.
 
-Exceptions:
+### Exception:
 
 - form would not accept a value more than 280 characters in the status column.
 
 ## Objective 09
 
- Description:
+ ### Description:
 
 - this feature is displayed in messages.djhtml which is rendered by
  messages_view
@@ -139,14 +139,14 @@ Exceptions:
 - the posts displayed are in newest to oldest order irrespective of who posted it.
 - After the user logs out the page is reset again.
 
-Exceptions:
+### Exception:
 
  -if there is no post posted by any user more button will just reload the current
 page when clicked .
 
 ## Objective 10
 
- Description:
+ ### Description:
 
 - this feature is displayed in messages.djhtml which is rendered by
 messages_view
@@ -157,7 +157,7 @@ and also displays the like count beside it.
 
 ## Objective 11
 
-Description:
+### Description:
 
  - this objective shows a variety of test users, shows many posts and likes and
  different friend requests to showcase all the functionality user has implemented.
