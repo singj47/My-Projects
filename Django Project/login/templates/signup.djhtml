@@ -1,0 +1,22 @@
+{% extends 'base.djhtml' %}
+
+{% block title %}Signup Page{% endblock %}
+
+{% block middle_column %}
+    <!-- TODO Objective 1: implement signup form -->
+    <div class="content-section">
+    <h2><b> Creat Your Account! </b></h2>
+    <form method="POST">
+    {% csrf_token %}
+    <fieldset>
+    {{signup_form}}
+    <br>	
+    <input type=submit>
+    </fieldset>
+    </form>
+    {% if create_failed %}
+    <p style="color:red"> Invalid Username or Password </p>
+    {% endif %}
+    </div>
+{% endblock %}
+
