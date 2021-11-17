@@ -1,0 +1,92 @@
+Watching for file changes with StatReloader
+[09/Apr/2020 18:51:53] "GET /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:51:54] "GET /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:51:57] "GET /e/singj47/signup/ HTTP/1.1" 200 4511
+[09/Apr/2020 18:52:12] "POST /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:52:30] "POST /e/singj47/ HTTP/1.1" 302 0
+[09/Apr/2020 18:52:30] "GET /e/singj47/social/messages/ HTTP/1.1" 200 7075
+[09/Apr/2020 18:55:42] "GET /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:55:57] "POST /e/singj47/ HTTP/1.1" 302 0
+[09/Apr/2020 18:55:58] "GET /e/singj47/social/messages/ HTTP/1.1" 200 6918
+[09/Apr/2020 18:56:21] "GET /e/singj47/logout/ HTTP/1.1" 302 0
+[09/Apr/2020 18:56:22] "GET /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:56:23] "GET /e/singj47/signup/ HTTP/1.1" 200 4511
+Internal Server Error: /e/singj47/signup/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/singj47/private/CS1XA3/Project03/login/views.py", line 72, in signup_view
+    login(request,user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 125, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/utils/functional.py", line 225, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+[09/Apr/2020 18:56:36] "POST /e/singj47/signup/ HTTP/1.1" 500 76530
+[09/Apr/2020 18:56:50] "POST /e/singj47/signup/ HTTP/1.1" 200 4511
+Internal Server Error: /e/singj47/signup/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/singj47/private/CS1XA3/Project03/login/views.py", line 72, in signup_view
+    login(request,user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 125, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/utils/functional.py", line 225, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+[09/Apr/2020 18:57:01] "POST /e/singj47/signup/ HTTP/1.1" 500 76751
+[09/Apr/2020 18:59:17] "GET /e/singj47/ HTTP/1.1" 200 4623
+[09/Apr/2020 18:59:20] "GET /e/singj47/signup/ HTTP/1.1" 200 4511
+Forbidden (CSRF cookie not set.): /e/singj47/signup/
+[10/Apr/2020 01:02:47] "POST /e/singj47/signup/ HTTP/1.1" 403 2864
+[10/Apr/2020 08:23:00] "GET /e/singj47/ HTTP/1.1" 200 4623
+[10/Apr/2020 08:23:00] "GET /e/singj47/ HTTP/1.1" 200 4623
+[10/Apr/2020 08:23:03] "GET /e/singj47/signup/ HTTP/1.1" 200 4511
+/home/singj47/private/CS1XA3/Project03/login/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 09, 2020 - 18:51:43
+Django version 3.0.3, using settings 'Project03.settings'
+Starting development server at http://localhost:10095/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[18/Apr/2020 09:00:18] "GET /e/singj47/ HTTP/1.1" 200 4623
+Not Found: /e/singj47/trial.html
+[22/Apr/2020 19:52:48] "GET /e/singj47/trial.html HTTP/1.1" 404 2558
+[22/Apr/2020 19:52:53] "GET /e/singj47 HTTP/1.1" 301 0
+[22/Apr/2020 19:52:54] "GET /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:53:01] "GET /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:53:05] "GET /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:53:57] "GET /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:54:30] "POST /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:54:40] "POST /e/singj47/ HTTP/1.1" 200 4623
+Not Found: /e/singj47/login
+[22/Apr/2020 19:54:55] "GET /e/singj47/login HTTP/1.1" 404 2543
+[22/Apr/2020 19:55:05] "GET /e/singj47/ HTTP/1.1" 200 4623
+[22/Apr/2020 19:55:09] "GET /e/singj47/signup/ HTTP/1.1" 200 4511
+Internal Server Error: /e/singj47/signup/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/singj47/private/CS1XA3/Project03/login/views.py", line 72, in signup_view
+    login(request,user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 125, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/opt/anaconda3/envs/djangoenv/lib/python3.7/site-packages/django/utils/functional.py", line 225, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+[22/Apr/2020 19:55:26] "POST /e/singj47/signup/ HTTP/1.1" 500 77691
